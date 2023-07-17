@@ -59,7 +59,7 @@ const Header = () => {
                                                         <img src={imageUrl} alt="User Image" />
                                                     </div>
                                                 )}
-                                                <div className="text-center font-semibold text-sm   text-[#609a42]">{loggedUser.userName}</div>
+                                                <div className="text-center font-semibold text-sm   text-[#609a42]">{loggedUser?.userName}</div>
                                                 <div className="text-center font-semibold text-sm   ">{loggedUser?.userType}</div>
                                                 <div className="cursor-pointer hover:text-[#609a42]" onClick={logOut}>
                                                     LogOut
