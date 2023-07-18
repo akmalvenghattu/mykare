@@ -44,14 +44,12 @@ const Auth = () => {
                 } else {
                     setErrorMessages('Invalid user name or password!');
                 }
+            } else {
+                setErrorMessages('Invalid user name or password!');
             }
 
         },
     });
-
-    const sessionCompletion = (user) => {
-        storeData('mykare_userLoggedData', user);
-    }
 
     return (
         <section className="bg-gray-50 dark:bg-gray-900">
